@@ -17,7 +17,7 @@ class Singleton {
     //返回此类唯一实例
     public static function getInstance() {
         if(is_null(self::$_instance))
-            self::$_instance = new Singleton();
+            self::$_instance = new static();
 		
         return self::$_instance;
     }
