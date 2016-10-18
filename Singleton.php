@@ -27,7 +27,8 @@ class Singleton {
         echo 'Singleton demo' . PHP_EOL;
     }
 }
- 
+
+//测试代码
 // $obj1 = new Singleton();	//实例化出错
 $obj1 = Singleton::getInstance();
 $obj1->display();
